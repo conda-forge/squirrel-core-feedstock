@@ -20,10 +20,22 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - aiohttp >=3.7.4
+    - fsspec >=0.8.7
+    - msgpack-python
+    - msgpack-numpy
+    - more-itertools
+    - pluggy
+    - ruamel.yaml
+    - tqdm
+    - numba
+    - pytorch
+    - gcsfs >=2021.06.0
 
 test:
   imports:
     - squirrel
+    - squirrel.catalog
   commands:
     - pip check
   requires:
