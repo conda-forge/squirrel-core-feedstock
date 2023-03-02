@@ -1,13 +1,13 @@
 {% set name = "squirrel-core" %}
-{% set version = "0.18.3" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/squirrel-core-{{ version }}.tar.gz
-  sha256: 0c3e2a918974e0392b6f99370f7d4c516296f0eb0a59d1d2ace4b8fa823eab68
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9dee110d7505ee3bb7d375dfe57512bdaeb2643d95a7c04d0e1be102f2c382f4
 
 build:
   noarch: python
