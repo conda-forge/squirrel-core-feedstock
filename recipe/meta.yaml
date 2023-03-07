@@ -35,16 +35,16 @@ requirements:
     - mako ^1.2.2
     - oauthlib ^3.2.1
     - aiohttp ^3.7.4
-    - adlfs <2021.10optionaltrue
-    - odfpy ^1.4.1optionaltrue
-    - openpyxl ^3.1.1optionaltrue
-    - pyxlsb ^1.0.10optionaltrue
-    - xlrd ^2.0.1optionaltrue
-    - gcsfs >=2021.7.0optionaltrue
-    - s3fs >=2021.7.0optionaltrue
-    - pytorch ^1.13.1optionaltrue
-    - zarr ^2.10.3optionaltrue
-    - pyarrow ^10.0.1optionaltrue
+    - adlfs <2021.10
+    - odfpy ^1.4.1
+    - openpyxl ^3.1.1
+    - pyxlsb ^1.0.10
+    - xlrd ^2.0.1
+    - gcsfs >=2021.7.0
+    - s3fs >=2021.7.0
+    - pytorch ^1.13.1
+    - zarr ^2.10.3
+    - pyarrow ^10.0.1
 
 test:
   imports:
