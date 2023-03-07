@@ -6,38 +6,46 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/squirrel_core-{{ version }}.tar.gz
   sha256: 9dee110d7505ee3bb7d375dfe57512bdaeb2643d95a7c04d0e1be102f2c382f4
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install .[all] -vv
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
   host:
     - python >=3.8,<4.0
-    - pip
     - poetry-core
+    - pip
   run:
     - python >=3.8,<4.0
-    - msgpack-python >=1.0.4,<2.0.0
-    - pytorch
-    - gcsfs >=2021.06.0
     - fsspec >=2021.7.0
-    - msgpack-numpy >=0.4.8,<0.5.0
-    - more-itertools >=9.0.0,<10.0.0
-    - pluggy >=1.0.0,<2.0.0
-    - ruamel.yaml >=0.17.21,<0.18.0
-    - tqdm >=4.64.1,<5.0.0
-    - numba >=0.56.4,<0.57.0
-    - numpy >=1.23.5,<2.0.0
-    - pyjwt >=2.4.0,<3.0.0
-    - mako >=1.2.2,<2.0.0
-    - oauthlib >=3.2.1,<4.0.0
-    - aiohttp >=3.7.4,<4.0.0
-    - poetry-core
-  
+    - msgpack-python ^1.0.4
+    - msgpack-numpy ^0.4.8
+    - more-itertools ^9.0.0
+    - pluggy ^1.0.0
+    - random-name ^0.1.1
+    - ruamel_yaml ^0.17.21
+    - tqdm ^4.64.1
+    - numba ^0.56.4
+    - numpy ^1.23.5
+    - pyjwt ^2.4.0
+    - mako ^1.2.2
+    - oauthlib ^3.2.1
+    - aiohttp ^3.7.4
+    - adlfs <2021.10optionaltrue
+    - odfpy ^1.4.1optionaltrue
+    - openpyxl ^3.1.1optionaltrue
+    - pyxlsb ^1.0.10optionaltrue
+    - xlrd ^2.0.1optionaltrue
+    - gcsfs >=2021.7.0optionaltrue
+    - s3fs >=2021.7.0optionaltrue
+    - pytorch ^1.13.1optionaltrue
+    - zarr ^2.10.3optionaltrue
+    - pyarrow ^10.0.1optionaltrue
+
 test:
   imports:
     - squirrel
@@ -48,8 +56,8 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/squirrel-core/
-  summary: Squirrel is a Python library that enables ML teams to share, load, and transform data in a collaborative, flexible, and efficient way.
+  home: https://merantix-momentum.com/technology/squirrel/
+  summary: Squirrel is a Python library that enables ML teams to share, load, and transform data in a collaborative, flexible and efficient way.
   license: Apache-2.0
   license_file: LICENSE
 
