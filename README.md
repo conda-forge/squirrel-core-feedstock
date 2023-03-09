@@ -1,11 +1,11 @@
-About squirrel-core
-===================
+About squirrel-core-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/squirrel-core-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/squirrel-core/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/squirrel-core-feedstock/blob/main/LICENSE.txt)
 
 Summary: Squirrel is a Python library that enables ML teams to share, load, and transform data in a collaborative, flexible, and efficient way.
 
