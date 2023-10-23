@@ -3,11 +3,11 @@ About squirrel-core-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/squirrel-core-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/squirrel-core/
+Home: https://merantix-momentum.com/technology/squirrel/
 
 Package license: Apache-2.0
 
-Summary: Squirrel is a Python library that enables ML teams to share, load, and transform data in a collaborative, flexible, and efficient way.
+Summary: Squirrel is a Python library that enables ML teams to share, load, and transform data in a collaborative, flexible and efficient way.
 
 Current build status
 ====================
@@ -145,4 +145,7 @@ Feedstock Maintainers
 
 * [@AlirezaSohofi](https://github.com/AlirezaSohofi/)
 * [@ThomasWollmann](https://github.com/ThomasWollmann/)
+* [@hosseinkarjoo](https://github.com/hosseinkarjoo/)
+* [@maik-schmidt](https://github.com/maik-schmidt/)
+* [@winfried-ripken](https://github.com/winfried-ripken/)
 
