@@ -1,5 +1,5 @@
 {% set name = "squirrel-core" %}
-{% set version = "0.19.2" %}
+{% set version = "0.19.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/squirrel_core-{{ version }}.tar.gz
-  sha256: 1238c98e545d39bded3491762fd74e56f4a4a1d9e096b217d3404eddb5157830
+  sha256: de2e657de0245baf12ba680bf5e6fa777c4c101614f21820b646c75d82d39723
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - more-itertools >=9.0.0,<10.0
     - pluggy >=1.0.0,<2.0
     - random-name >=0.1.1,<1.0
-    - ruamel.yaml >=0.17.21,<1.0
+    - ruamel.yaml >=0.17.21,<0.18.0
     - tqdm >=4.64.1,<5.0
     - numba >=0.56.4,<1.0
     - numpy >=1.23.5,<2.0
