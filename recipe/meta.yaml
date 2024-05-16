@@ -1,5 +1,5 @@
 {% set name = "squirrel-core" %}
-{% set version = "0.19.8" %}
+{% set version = "0.20.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/squirrel_core-{{ version }}.tar.gz
-  sha256: 7c2237ea71075b6ce6b6008e463b577eb5bf9d6c13d1ceca7105b34499752b7f
+  sha256: 8ddb11114e7e50f2995a1d70b37ed0cbf79d83899e050a1d99b75ba1e82ff3a4
 
 build:
   noarch: python
@@ -46,7 +46,8 @@ requirements:
     - pytorch >=1.13.1,<2.0
     - zarr >=2.10.3,<3.0
     - pyarrow >=10.0.1,<11.0
-    - pandas <=1.5.3
+    - pandas >=2.0.3,<3.0
+    - urllib3 >=1.25.4,<1.27
 
 test:
   imports:
@@ -66,7 +67,6 @@ about:
 extra:
   recipe-maintainers:
     - ThomasWollmann
-    - winfried-ripken
-    - AlirezaSohofi
+    - MsMatias
     - maik-schmidt
     - hosseinkarjoo
