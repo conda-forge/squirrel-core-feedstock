@@ -46,7 +46,8 @@ requirements:
     - pytorch >=1.13.1,<2.0
     - zarr >=2.10.3,<3.0
     - pyarrow >=10.0.1,<11.0
-    - pandas <=1.5.3
+    - pandas >=2.0.3,<3.0
+    - urllib3 >=1.25.4,<1.27
 
 test:
   imports:
