@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/squirrel_core-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/squirrel_core-{{ version }}.tar.gz
   sha256: 8ddb11114e7e50f2995a1d70b37ed0cbf79d83899e050a1d99b75ba1e82ff3a4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - poetry-core
     - pip
   run:
-    - python >=3.8,<4.0
+    - python >={{ python_min }},<4.0
     - fsspec >=2021.7.0
     - msgpack-python >=1.0.4,<2.0
     - msgpack-numpy >=0.4.8,<1.0
@@ -57,6 +57,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://merantix-momentum.com/technology/squirrel/
